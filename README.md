@@ -1,0 +1,1 @@
+# FiFire Daily Bonus Frame
