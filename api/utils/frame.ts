@@ -44,12 +44,7 @@ export async function configureApp(app: Frog, c: FrameContext, browserLocationTy
 
   const appAddress = privateKeyToAccount(appPk).address
   app.metaTags = addMetaTags(appOwnerFID).unstable_metaTags
-
-  if (browserLocationType === 'appAuthUrl') {
-    app.browserLocation = appAuthUrl
-  } else {
-    app.browserLocation = 'https://dappykit.org/?source=frog-vercel-template'
-  }
+  app.browserLocation = 'https://warpcast.com/fifire'
 
   const result: IClickData = {
     dappyKit,
